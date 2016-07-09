@@ -1,0 +1,120 @@
+Release 14.6 ngdbuild P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ML605.ucf -p
+xc6vlx240t-ff1156-1 system.ngc system.ngd
+
+Reading NGO file
+"C:/Users/Bita/Desktop/ETHERNET/HW_Example_13_2_ML605/system.ngc" ...
+Loading design module
+"C:\Users\Bita\Desktop\ETHERNET\HW_Example_13_2_ML605/blk_mem_gen_inputMem.ngc".
+..
+Loading design module
+"C:\Users\Bita\Desktop\ETHERNET\HW_Example_13_2_ML605/blk_mem_gen_paramReg.ngc".
+..
+Loading design module
+"C:\Users\Bita\Desktop\ETHERNET\HW_Example_13_2_ML605/blk_mem_gen_outputMem.ngc"
+...
+Loading design module
+"C:\Users\Bita\Desktop\ETHERNET\HW_Example_13_2_ML605/D_RAM.ngc"...
+Loading design module "ipcore_dir/IDX.ngc"...
+Loading design module "ipcore_dir/chipscop.ngc"...
+Loading design module "ipcore_dir/chipscope_icon.ngc"...
+Loading design module "ipcore_dir/omp_X.ngc"...
+Loading design module "ipcore_dir/omp_Q.ngc"...
+Loading design module "ipcore_dir/omp_V.ngc"...
+Loading design module "ipcore_dir/omp_supp.ngc"...
+Loading design module "ipcore_dir/faddsub_v7.ngc"...
+Loading design module "ipcore_dir/fadd_v7.ngc"...
+Loading design module "ipcore_dir/fmul_v7.ngc"...
+Loading design module "ipcore_dir/fdiv_v7.ngc"...
+Loading design module "ipcore_dir/fcmp_v7.ngc"...
+Loading design module "ipcore_dir/fsqrt_v7.ngc"...
+INFO:NgdBuild:1317 - Using core chipscope_vio_v1 requires a ChipScopePro
+   license.  The following blocks are instances of core chipscope_vio_v1:
+	/system/tm/dut_ParallelDecomposition/u_chipscop
+
+-----------------------------------------------
+INFO:Security:71 - If a license for part 'xc6vlx240t' is available, it will be
+possible to use 'ChipScopePro_TDP' instead of 'ChipScopePro'.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+-----------------------------------------------
+
+-----------------------------------------------
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "ML605.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_tx_max_output_1" = FROM
+   "tx_max_output" TO "tx_max_output_target" 8000 ps DATAPATHONLY;>
+   [ML605.ucf(240)]: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
+   constraint named 'tx_max_output'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_userRunClearToggle" =
+   FROM "userRunClearTogUS" TO "userRunClearTogCS" 8000 ps DATAPATHONLY;>
+   [ML605.ucf(244)]: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
+   constraint named 'userRunClearTogUS'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_userRunClearToggle" =
+   FROM "userRunClearTogUS" TO "userRunClearTogCS" 8000 ps DATAPATHONLY;>
+   [ML605.ucf(244)]: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
+   constraint named 'userRunClearTogCS'.
+
+INFO:ConstraintSystem:178 - TNM 'clk_200', used in period specification
+   'TS_CLK_200', was traced into PLL_ADV instance clkBPLL. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clk_125_eth_i = PERIOD "clk_125_eth_i" TS_CLK_200 /
+   0.625 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_200', used in period specification
+   'TS_CLK_200', was traced into PLL_ADV instance clkBPLL. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_clk_user_interface_i = PERIOD "clk_user_interface_i"
+   TS_CLK_200 / 0.416666667 HIGH 50%>
+
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC "TS_userRunClearToggle" = FROM
+   "userRunClearTogUS" TO "userRunClearTogCS" 8000 ps DATAPATHONLY;>
+   [ML605.ucf(244)] is overridden by the constraint <TIMESPEC
+   "TS_userRunClearToggle" = FROM "userRunSetTogCS" TO "userRunSetTogUS" 8000 ps
+   DATAPATHONLY;> [ML605.ucf(247)]. The overriden constraint usually comes from
+   the input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR
+   to promote this message to an error.
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC "TS_userRunClearToggle" = FROM
+   "userRunSetTogCS" TO "userRunSetTogUS" 8000 ps DATAPATHONLY;>
+   [ML605.ucf(247)] is overridden by the constraint <TIMESPEC
+   "TS_userRunClearToggle" = FROM "userRunSetTogCS" TO "userRunSetTogUS" 8000 ps
+   DATAPATHONLY;> [ML605.ucf(251)]. The overriden constraint usually comes from
+   the input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR
+   to promote this message to an error.
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:488 - Attribute value "CLKFBOUT" is not an accepted value for
+   attribute "CLK_FEEDBACK" on "clkBPLL".
+WARNING:NgdBuild:488 - Attribute value "CLKFBOUT" is not an accepted value for
+   attribute "CLK_FEEDBACK" on "E2M/EC/clkBPLL".
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   7
+
+Total memory usage is 884388 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion: 2 min  50 sec
+Total CPU time to NGDBUILD completion:  2 min  49 sec
+
+Writing NGDBUILD log file "system.bld"...

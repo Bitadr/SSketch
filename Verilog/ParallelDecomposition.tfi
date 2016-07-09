@@ -1,0 +1,27 @@
+
+
+
+// Instantiate the module
+ParallelDecomposition instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .data_arrive(data_arrive), 
+    .flush(flush), 
+    .read_write_done(read_write_done), 
+    .rdy_read(rdy_read), 
+    .we(we), 
+    .dinaD(dinaD), 
+    .addrD_in(addrD_in), 
+    .weX_in(weX_in), 
+    .dinaX(dinaX), 
+    .addrX_in(addrX_in), 
+    .id_write(id_write), 
+    .addrVout(addrVout), 
+    .doutVout(doutVout), 
+    .addrSupp(addrSupp), 
+    .doutSuppOut(doutSuppOut), 
+    .id_read(id_read), 
+    .Supp_Len(Supp_Len)
+    );
+
+

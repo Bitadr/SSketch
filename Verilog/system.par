@@ -1,0 +1,448 @@
+Release 14.6 par P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+MEHRDAD-PC::  Mon Apr 28 16:44:58 2014
+
+par -w -intstyle ise -ol high -mt off system_map.ncd system.ncd system.pcf 
+
+
+Constraints file: system.pcf.
+Loading device for application Rf_Device from file '6vlx240t.nph' in environment C:\Xilinx\14.6\ISE_DS\ISE\.
+   "system" is an NCD, version 3.2, device xc6vlx240t, package ff1156, speed -1
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:56 - Part 'xc6vlx240t' is not a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.17 2013-06-08".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                50,888 out of 301,440   16%
+    Number used as Flip Flops:              50,888
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                     81,585 out of 150,720   54%
+    Number used as logic:                   78,066 out of 150,720   51%
+      Number using O6 output only:          61,042
+      Number using O5 output only:           2,511
+      Number using O5 and O6:               14,513
+      Number used as ROM:                        0
+    Number used as Memory:                   2,748 out of  58,400    4%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:         2,748
+        Number using O6 output only:         2,639
+        Number using O5 output only:            10
+        Number using O5 and O6:                 99
+    Number used exclusively as route-thrus:    771
+      Number with same-slice register load:    663
+      Number with same-slice carry load:       108
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                27,814 out of  37,680   73%
+  Number of LUT Flip Flop pairs used:       90,484
+    Number with an unused Flip Flop:        42,274 out of  90,484   46%
+    Number with an unused LUT:               8,899 out of  90,484    9%
+    Number of fully used LUT-FF pairs:      39,311 out of  90,484   43%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 301,440    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        61 out of     600   10%
+    Number of LOCed IOBs:                       53 out of      61   86%
+    IOB Flip Flops:                             21
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                382 out of     416   91%
+    Number using RAMB36E1 only:                382
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                 32 out of     832    3%
+    Number using RAMB18E1 only:                 30
+    Number using FIFO18E1 only:                  2
+  Number of BUFG/BUFGCTRLs:                      5 out of      32   15%
+    Number used as BUFGs:                        5
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                10 out of     720    1%
+    Number used as ILOGICE1s:                   10
+    Number used as ISERDESE1s:                   0
+  Number of OLOGICE1/OSERDESE1s:                12 out of     720    1%
+    Number used as OLOGICE1s:                   12
+    Number used as OSERDESE1s:                   0
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           0 out of      72    0%
+  Number of BUFRs:                               0 out of      36    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                          356 out of     768   46%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of      20    0%
+  Number of IBUFDS_GTXE1s:                       0 out of      12    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         1 out of      18    5%
+  Number of IODELAYE1s:                         10 out of     720    1%
+  Number of MMCM_ADVs:                           2 out of      12   16%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       1 out of       4   25%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+WARNING:Timing:3223 - Timing constraint TS_tx_fifo_rd_to_wr = MAXDELAY FROM TIMEGRP "tx_fifo_rd_to_wr" TO TIMEGRP       
+   "emac_single_clk_ref_gtx" 8 ns DATAPATHONLY; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint TS_tx_fifo_wr_to_rd = MAXDELAY FROM TIMEGRP "tx_fifo_wr_to_rd" TO TIMEGRP       
+   "emac_single_clk_ref_gtx" 8 ns DATAPATHONLY; ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint TS_rx_fifo_wr_to_rd = MAXDELAY FROM TIMEGRP "rx_fifo_wr_to_rd" TO TIMEGRP       
+   "emac_single_clk_ref_gtx" 8 ns DATAPATHONLY; ignored during timing analysis.
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+Starting initial Timing Analysis.  REAL time: 1 mins 47 secs 
+Finished initial Timing Analysis.  REAL time: 1 mins 50 secs 
+
+Starting Router
+
+
+Phase  1  : 602250 unrouted;      REAL time: 2 mins 1 secs 
+
+Phase  2  : 458862 unrouted;      REAL time: 2 mins 29 secs 
+
+Phase  3  : 229790 unrouted;      REAL time: 4 mins 41 secs 
+
+Phase  4  : 229892 unrouted; (Setup:2048, Hold:1964, Component Switching Limit:0)     REAL time: 5 mins 27 secs 
+
+Updating file: system.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:1641, Hold:1692, Component Switching Limit:0)     REAL time: 10 mins 31 secs 
+
+Phase  6  : 0 unrouted; (Setup:1641, Hold:1692, Component Switching Limit:0)     REAL time: 10 mins 45 secs 
+
+Phase  7  : 0 unrouted; (Setup:1641, Hold:1692, Component Switching Limit:0)     REAL time: 11 mins 58 secs 
+
+Phase  8  : 0 unrouted; (Setup:1641, Hold:1692, Component Switching Limit:0)     REAL time: 11 mins 58 secs 
+
+Phase  9  : 0 unrouted; (Setup:1641, Hold:0, Component Switching Limit:0)     REAL time: 12 mins 9 secs 
+
+Phase 10  : 0 unrouted; (Setup:1641, Hold:0, Component Switching Limit:0)     REAL time: 12 mins 35 secs 
+Total REAL time to Router completion: 12 mins 35 secs 
+Total CPU time to Router completion: 13 mins 51 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|  clk_user_interface | BUFGCTRL_X0Y1| No   |19123 |  0.468     |  2.048      |
++---------------------+--------------+------+------+------------+-------------+
+|         clk_125_eth | BUFGCTRL_X0Y0| No   |  436 |  0.416     |  2.020      |
++---------------------+--------------+------+------+------------+-------------+
+| E2M/EC/sysACE_clk_o | BUFGCTRL_X0Y2| No   |   15 |  0.218     |  2.019      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|position/chipscop_co |              |      |      |            |             |
+|            ntrol<0> |BUFGCTRL_X0Y31| No   |   75 |  0.127     |  1.715      |
++---------------------+--------------+------+------+------------+-------------+
+| GMII_RX_CLK_0_BUFGP | BUFGCTRL_X0Y3| No   |   44 |  0.262     |  1.891      |
++---------------------+--------------+------+------+------------+-------------+
+|             clk_200 |         Local|      |    7 |  2.626     |  4.939      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<17> |         Local|      |    3 |  0.000     |  0.491      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<25> |         Local|      |    3 |  0.012     |  1.194      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|  position/IN_BUS<5> |         Local|      |    3 |  0.015     |  0.721      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<29> |         Local|      |    3 |  0.153     |  1.367      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|  position/IN_BUS<7> |         Local|      |    3 |  0.024     |  0.823      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<31> |         Local|      |    3 |  0.117     |  0.776      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|  position/IN_BUS<0> |         Local|      |    3 |  0.046     |  1.642      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<19> |         Local|      |    3 |  0.326     |  0.821      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<27> |         Local|      |    3 |  0.010     |  0.942      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|  position/IN_BUS<9> |         Local|      |    3 |  0.274     |  0.505      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<28> |         Local|      |    3 |  0.140     |  0.990      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<18> |         Local|      |    3 |  0.137     |  0.363      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<26> |         Local|      |    3 |  0.000     |  0.371      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|  position/IN_BUS<4> |         Local|      |    3 |  0.139     |  0.363      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|  position/IN_BUS<1> |         Local|      |    3 |  0.017     |  1.400      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<20> |         Local|      |    3 |  0.134     |  0.368      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<21> |         Local|      |    3 |  0.202     |  0.984      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|  position/IN_BUS<6> |         Local|      |    3 |  0.118     |  0.732      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<22> |         Local|      |    3 |  0.000     |  0.350      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<23> |         Local|      |    3 |  0.243     |  0.720      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|  position/IN_BUS<8> |         Local|      |    3 |  0.265     |  0.826      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<24> |         Local|      |    3 |  0.001     |  0.989      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<30> |         Local|      |    3 |  0.278     |  1.249      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<10> |         Local|      |    3 |  0.105     |  0.469      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|  position/IN_BUS<3> |         Local|      |    3 |  0.000     |  1.408      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<15> |         Local|      |    3 |  0.116     |  1.067      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<16> |         Local|      |    3 |  0.175     |  0.901      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<12> |         Local|      |    3 |  0.032     |  0.863      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<14> |         Local|      |    3 |  0.245     |  1.007      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|  position/IN_BUS<2> |         Local|      |    3 |  0.122     |  0.699      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<11> |         Local|      |    3 |  0.240     |  0.791      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+| position/IN_BUS<13> |         Local|      |    3 |  0.292     |  0.943      |
++---------------------+--------------+------+------+------------+-------------+
+|tm/dut_ParallelDecom |              |      |      |            |             |
+|position/u_chipscope |              |      |      |            |             |
+|_icon/U0/iUPDATE_OUT |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  1.132      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 1641 (Setup: 1641, Hold: 0, Component Switching Limit: 0)
+
+WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
+
+   Review the timing report using Timing Analyzer (In ISE select "Post-Place &
+   Route Static Timing Report"). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
+
+   Try the Design Goal and Strategies for Timing Performance(In ISE select Project -> Design Goals & Strategies) to ensure the best options
+   are set in the tools for timing closure.
+
+   Use the Xilinx "SmartXplorer" script to try special combinations of
+   options known to produce very good results.
+
+   Visit the Xilinx technical support web at http://support.xilinx.com and go to
+   either "Troubleshoot->Tech Tips->Timing & Constraints" or "
+   TechXclusives->Timing Closure" for tips and suggestions for meeting timing
+   in your design.
+
+Number of Timing Constraints that were not applied: 6
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_clk_125_eth_i = PERIOD TIMEGRP "clk_12 | SETUP       |    -0.364ns|     8.728ns|      10|        1641
+  5_eth_i" TS_CLK_200 / 0.625 HIGH 50%      | HOLD        |     0.025ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_clk_user_interface_i = PERIOD TIMEGRP  | SETUP       |     0.015ns|    11.984ns|       0|           0
+  "clk_user_interface_i" TS_CLK_200 /       | HOLD        |     0.006ns|            |       0|           0
+     0.416666667 HIGH 50%                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sysACE_MPDATAIN = MAXDELAY FROM TIMEGR | SETUP       |     0.059ns|     3.641ns|       0|           0
+  P "sysACE_MPDATA" TO TIMEGRP         "sys | HOLD        |     0.618ns|            |       0|           0
+  ACE_clk_o" 3.7 ns DATAPATHONLY            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_hard_reset_IG2 = MAXDELAY FROM TIMEGRP | SETUP       |     0.068ns|     7.932ns|       0|           0
+   "hard_reset" TO TIMEGRP "RAMS" 8 ns      | HOLD        |     0.181ns|            |       0|           0
+      DATAPATHONLY                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_hard_reset_IG = MAXDELAY FROM TIMEGRP  | SETUP       |     0.108ns|     7.892ns|       0|           0
+  "hard_reset" TO TIMEGRP "FFS" 8 ns        | HOLD        |     0.096ns|            |       0|           0
+    DATAPATHONLY                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_CLK_200 = PERIOD TIMEGRP "clk_200" 5 n | SETUP       |     4.042ns|     0.958ns|       0|           0
+  s HIGH 50%                                | HOLD        |     0.281ns|            |       0|           0
+                                            | MINPERIOD   |     0.239ns|     4.761ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_hard_reset_IG3 = MAXDELAY FROM TIMEGRP | SETUP       |     2.280ns|     5.720ns|       0|           0
+   "hard_reset" TO TIMEGRP "CPUS" 8 ns      | HOLD        |     1.586ns|            |       0|           0
+      DATAPATHONLY                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_tx_meta_protect = MAXDELAY FROM TIMEGR | SETUP       |     2.935ns|     2.065ns|       0|           0
+  P "tx_metastable" 5 ns DATAPATHONLY       | HOLD        |     0.103ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_rx_meta_protect = MAXDELAY FROM TIMEGR | SETUP       |     3.943ns|     1.057ns|       0|           0
+  P "rx_metastable" 5 ns                    | HOLD        |     0.111ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_emac_single_clk_phy_rx = PERIOD TIMEGR | SETUP       |     4.727ns|     2.773ns|       0|           0
+  P "emac_single_clk_phy_rx" 7.5 ns         | HOLD        |     0.094ns|            |       0|           0
+   HIGH 50%                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_CLK_125 = PERIOD TIMEGRP "clk_125_eth" | MINHIGHPULSE|     5.500ns|     2.400ns|       0|           0
+   7.9 ns HIGH 50%                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_userRunClearToggle = MAXDELAY FROM TIM | SETUP       |     6.201ns|     1.799ns|       0|           0
+  EGRP "userRunSetTogCS" TO TIMEGRP         | HOLD        |     0.346ns|            |       0|           0
+   "userRunSetTogUS" 8 ns DATAPATHONLY      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_rx_fifo_rd_to_wr = MAXDELAY FROM TIMEG | SETUP       |     6.837ns|     1.163ns|       0|           0
+  RP "rx_fifo_rd_to_wr" TO TIMEGRP          | HOLD        |     0.134ns|            |       0|           0
+  "emac_single_clk_phy_rx" 8 ns DATAPATHONL |             |            |            |        |            
+  Y                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_tx_fifo_addr = MAXDELAY FROM TIMEGRP " | SETUP       |     7.899ns|     2.101ns|       0|           0
+  tx_addr_rd" TO TIMEGRP "tx_addr_wr"       | HOLD        |     0.375ns|            |       0|           0
+     10 ns                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sysACE_OE = MAXDELAY FROM TIMEGRP "sys | MAXDELAY    |    18.731ns|     4.709ns|       0|           0
+  ACE_clk_o" TO TIMEGRP "sysACE_MPOE"       |             |            |            |        |            
+     23.44 ns DATAPATHONLY                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sysACE_WE = MAXDELAY FROM TIMEGRP "sys | MAXDELAY    |    18.794ns|     4.646ns|       0|           0
+  ACE_clk_o" TO TIMEGRP "sysACE_MPWE"       |             |            |            |        |            
+     23.44 ns DATAPATHONLY                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sysACE_clk_o = PERIOD TIMEGRP "sysACE_ | MINPERIOD   |    27.978ns|     2.222ns|       0|           0
+  clk_o" 30.2 ns HIGH 50%                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_tx_fifo_rd_to_wr = MAXDELAY FROM TIMEG | N/A         |         N/A|         N/A|     N/A|         N/A
+  RP "tx_fifo_rd_to_wr" TO TIMEGRP          |             |            |            |        |            
+  "emac_single_clk_ref_gtx" 8 ns DATAPATHON |             |            |            |        |            
+  LY                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_tx_fifo_wr_to_rd = MAXDELAY FROM TIMEG | N/A         |         N/A|         N/A|     N/A|         N/A
+  RP "tx_fifo_wr_to_rd" TO TIMEGRP          |             |            |            |        |            
+  "emac_single_clk_ref_gtx" 8 ns DATAPATHON |             |            |            |        |            
+  LY                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_rx_fifo_wr_to_rd = MAXDELAY FROM TIMEG | N/A         |         N/A|         N/A|     N/A|         N/A
+  RP "rx_fifo_wr_to_rd" TO TIMEGRP          |             |            |            |        |            
+  "emac_single_clk_ref_gtx" 8 ns DATAPATHON |             |            |            |        |            
+  LY                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_emac_single_clk_ref_gtx = PERIOD TIMEG | N/A         |         N/A|         N/A|     N/A|         N/A
+  RP "emac_single_clk_ref_gtx" 8 ns         |             |            |            |        |            
+   HIGH 50%                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_CLK_200
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_CLK_200                     |      5.000ns|      4.761ns|      5.455ns|            0|           10|            1|      8533260|
+| TS_clk_125_eth_i              |      8.000ns|      8.728ns|          N/A|           10|            0|       127614|            0|
+| TS_clk_user_interface_i       |     12.000ns|     11.984ns|          N/A|            0|            0|      8405646|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 13 mins 7 secs 
+Total CPU time to PAR completion: 14 mins 23 secs 
+
+Peak Memory Usage:  3212 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - 10 errors found.
+
+Number of error messages: 0
+Number of warning messages: 4
+Number of info messages: 1
+
+Writing design to file system.ncd
+
+
+
+PAR done!
