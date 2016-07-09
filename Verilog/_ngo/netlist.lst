@@ -1,0 +1,19 @@
+C:\Users\Bita\Desktop\ETHERNET\HW_Example_13_2_ML605\system.ngc 1398719920
+C:\Users\Bita\Desktop\ETHERNET\HW_Example_13_2_ML605/blk_mem_gen_inputMem.ngc 1396921294
+C:\Users\Bita\Desktop\ETHERNET\HW_Example_13_2_ML605/blk_mem_gen_paramReg.ngc 1395964130
+C:\Users\Bita\Desktop\ETHERNET\HW_Example_13_2_ML605/blk_mem_gen_outputMem.ngc 1396921653
+C:\Users\Bita\Desktop\ETHERNET\HW_Example_13_2_ML605/D_RAM.ngc 1395966284
+ipcore_dir/IDX.ngc 1396309195
+ipcore_dir/chipscop.ngc 1396633832
+ipcore_dir/chipscope_icon.ngc 1396634282
+ipcore_dir/omp_X.ngc 1397236356
+ipcore_dir/omp_Q.ngc 1397601776
+ipcore_dir/omp_V.ngc 1396045014
+ipcore_dir/omp_supp.ngc 1396045186
+ipcore_dir/faddsub_v7.ngc 1397257396
+ipcore_dir/fadd_v7.ngc 1397257621
+ipcore_dir/fmul_v7.ngc 1397257833
+ipcore_dir/fdiv_v7.ngc 1397258056
+ipcore_dir/fcmp_v7.ngc 1397258252
+ipcore_dir/fsqrt_v7.ngc 1397258478
+OK
