@@ -1,0 +1,24 @@
+
+
+
+// Instantiate the module
+OMP_core instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .Q_address_in(Q_address_in), 
+    .datain(datain), 
+    .Q_we_in(Q_we_in), 
+    .ap_done(ap_done), 
+    .ap_idle(ap_idle), 
+    .ap_start(ap_start), 
+    .X_address0_in(X_address0_in), 
+    .X_d0_in(X_d0_in), 
+    .X_we0_in(X_we0_in), 
+    .V_address0_in(V_address0_in), 
+    .V_q0(V_q0), 
+    .supp_address0_in(supp_address0_in), 
+    .supp_q0(supp_q0), 
+    .supp_len(supp_len)
+    );
+
+
