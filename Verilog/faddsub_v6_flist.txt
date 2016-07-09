@@ -1,0 +1,18 @@
+# Output products list for <faddsub_v6>
+_xmsgs\pn_parser.xmsgs
+demo_tb\tb_faddsub_v6.vhd
+faddsub_v6.asy
+faddsub_v6.gise
+faddsub_v6.ngc
+faddsub_v6.sym
+faddsub_v6.v
+faddsub_v6.veo
+faddsub_v6.xco
+faddsub_v6.xise
+faddsub_v6\cmodel\floating_point_v6_0_bitacc_cmodel_lin.zip
+faddsub_v6\cmodel\floating_point_v6_0_bitacc_cmodel_lin64.zip
+faddsub_v6\cmodel\floating_point_v6_0_bitacc_cmodel_nt.zip
+faddsub_v6\cmodel\floating_point_v6_0_bitacc_cmodel_nt64.zip
+faddsub_v6_flist.txt
+faddsub_v6_readme.txt
+faddsub_v6_xmdf.tcl

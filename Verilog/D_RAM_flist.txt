@@ -1,0 +1,24 @@
+# Output products list for <D_RAM>
+D_RAM.asy
+D_RAM.gise
+D_RAM.ngc
+D_RAM.v
+D_RAM.veo
+D_RAM.xco
+D_RAM.xise
+D_RAM_flist.txt
+D_RAM_ste\example_design\D_RAM_top.ucf
+D_RAM_ste\example_design\D_RAM_top.vhd
+D_RAM_ste\example_design\D_RAM_top.xdc
+D_RAM_ste\example_design\bmg_wrapper.vhd
+D_RAM_ste\implement\implement.sh
+D_RAM_ste\implement\planAhead_rdn.bat
+D_RAM_ste\implement\planAhead_rdn.sh
+D_RAM_ste\implement\planAhead_rdn.tcl
+D_RAM_ste\implement\xst.prj
+D_RAM_ste\implement\xst.scr
+D_RAM_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_v6_2_readme.txt
+summary.log

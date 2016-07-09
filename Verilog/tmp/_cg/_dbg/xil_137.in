@@ -1,0 +1,69 @@
+SET_FLAG DEBUG FALSE
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE FALSE
+SET_PREFERENCE devicefamily virtex6
+SET_PREFERENCE device xc6vlx240t
+SET_PREFERENCE speedgrade -1
+SET_PREFERENCE package ff1156
+SET_PREFERENCE verilogsim true
+SET_PREFERENCE vhdlsim false
+SET_PREFERENCE simulationfiles Structural
+SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
+SET_PREFERENCE outputdirectory C:/Users/Bita/Desktop/ETHERNET/HW_Example_13_2_ML605/
+SET_PREFERENCE workingdirectory C:/Users/Bita/Desktop/ETHERNET/HW_Example_13_2_ML605/tmp/
+SET_PREFERENCE subworkingdirectory C:/Users/Bita/Desktop/ETHERNET/HW_Example_13_2_ML605/tmp/_cg/
+SET_PREFERENCE transientdirectory C:/Users/Bita/Desktop/ETHERNET/HW_Example_13_2_ML605/tmp/_cg/_dbg/
+SET_PREFERENCE designentry Verilog
+SET_PREFERENCE flowvendor Other
+SET_PREFERENCE addpads false
+SET_PREFERENCE projectname coregen
+SET_PREFERENCE formalverification false
+SET_PREFERENCE asysymbol false
+SET_PREFERENCE implementationfiletype Ngc
+SET_PREFERENCE foundationsym false
+SET_PREFERENCE createndf false
+SET_PREFERENCE removerpms false
+SET_PARAMETER Component_Name faddsub_v6
+SET_PARAMETER Operation_Type Add_Subtract
+SET_PARAMETER Add_Sub_Value Both
+SET_PARAMETER C_Compare_Operation Programmable
+SET_PARAMETER A_Precision_Type Single
+SET_PARAMETER C_A_Exponent_Width 8
+SET_PARAMETER C_A_Fraction_Width 24
+SET_PARAMETER Result_Precision_Type Single
+SET_PARAMETER C_Result_Exponent_Width 8
+SET_PARAMETER C_Result_Fraction_Width 24
+SET_PARAMETER C_Optimization Speed_Optimized
+SET_PARAMETER C_Mult_Usage Full_Usage
+SET_PARAMETER Flow_Control NonBlocking
+SET_PARAMETER Axi_Optimize_Goal Resources
+SET_PARAMETER Has_RESULT_TREADY false
+SET_PARAMETER Maximum_Latency false
+SET_PARAMETER C_Latency 7
+SET_PARAMETER C_Rate 1
+SET_PARAMETER Has_ACLKEN true
+SET_PARAMETER Has_ARESETn false
+SET_PARAMETER C_Has_UNDERFLOW false
+SET_PARAMETER C_Has_OVERFLOW false
+SET_PARAMETER C_Has_INVALID_OP false
+SET_PARAMETER C_Has_DIVIDE_BY_ZERO false
+SET_PARAMETER Has_A_TLAST false
+SET_PARAMETER Has_A_TUSER false
+SET_PARAMETER A_TUSER_Width 1
+SET_PARAMETER Has_B_TLAST false
+SET_PARAMETER Has_B_TUSER false
+SET_PARAMETER B_TUSER_Width 1
+SET_PARAMETER Has_OPERATION_TLAST false
+SET_PARAMETER Has_OPERATION_TUSER false
+SET_PARAMETER OPERATION_TUSER_Width 1
+SET_PARAMETER RESULT_TLAST_Behv Null
+SET_CORE_NAME Floating-point
+SET_CORE_VERSION 6.0
+SET_CORE_VLNV xilinx.com:ip:floating_point:6.0
+SET_CORE_CLASS com.xilinx.ip.floating_point_v6_0.floating_point_v6_0
+SET_CORE_PATH C:/Xilinx/14.6/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/floating_point_v6_0
+SET_CORE_GUIPATH C:/Xilinx/14.6/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/floating_point_v6_0/gui/floating_point_v6_0.tcl
+SET_CORE_DATASHEET C:\Xilinx\14.6\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\floating_point_v6_0\doc\ds816_floating_point.pdf
+ADD_CORE_DOCUMENT <C:\Xilinx\14.6\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\floating_point_v6_0\doc\floating_point_v6_0_readme.txt><floating_point_v6_0_readme.txt>
+ADD_CORE_DOCUMENT <C:\Xilinx\14.6\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\floating_point_v6_0\doc\floating_point_v6_0_vinfo.html><floating_point_v6_0_vinfo.html>
+ADD_CORE_DOCUMENT <C:\Xilinx\14.6\ISE_DS\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\floating_point_v6_0\doc\ds816_floating_point.pdf><ds816_floating_point.pdf>

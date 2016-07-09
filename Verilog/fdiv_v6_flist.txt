@@ -1,0 +1,18 @@
+# Output products list for <fdiv_v6>
+_xmsgs\pn_parser.xmsgs
+demo_tb\tb_fdiv_v6.vhd
+fdiv_v6.asy
+fdiv_v6.gise
+fdiv_v6.ngc
+fdiv_v6.sym
+fdiv_v6.v
+fdiv_v6.veo
+fdiv_v6.xco
+fdiv_v6.xise
+fdiv_v6\cmodel\floating_point_v6_0_bitacc_cmodel_lin.zip
+fdiv_v6\cmodel\floating_point_v6_0_bitacc_cmodel_lin64.zip
+fdiv_v6\cmodel\floating_point_v6_0_bitacc_cmodel_nt.zip
+fdiv_v6\cmodel\floating_point_v6_0_bitacc_cmodel_nt64.zip
+fdiv_v6_flist.txt
+fdiv_v6_readme.txt
+fdiv_v6_xmdf.tcl

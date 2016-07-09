@@ -1,0 +1,37 @@
+SET_PARAMETER c_has_invalid_op false
+SET_PARAMETER has_aclken true
+SET_PARAMETER c_has_overflow false
+SET_PARAMETER add_sub_value Both
+SET_PARAMETER has_result_tready false
+SET_PARAMETER c_a_fraction_width 24
+SET_PARAMETER has_b_tlast false
+SET_PARAMETER maximum_latency false
+SET_PARAMETER c_mult_usage Full_Usage
+SET_PARAMETER has_a_tlast false
+SET_PARAMETER has_operation_tuser false
+SET_PARAMETER flow_control NonBlocking
+SET_PARAMETER c_has_divide_by_zero false
+SET_PARAMETER has_aresetn false
+SET_PARAMETER a_tuser_width 1
+SET_PARAMETER c_latency 7
+SET_PARAMETER c_has_underflow false
+SET_PARAMETER has_operation_tlast false
+SET_PARAMETER c_result_exponent_width 8
+SET_PARAMETER a_precision_type Single
+SET_PARAMETER result_tlast_behv Null
+SET_PARAMETER c_rate 1
+SET_PARAMETER operation_tuser_width 1
+SET_PARAMETER result_precision_type Single
+SET_PARAMETER b_tuser_width 1
+SET_PARAMETER component_name faddsub_v6
+SET_PARAMETER c_compare_operation Programmable
+SET_PARAMETER operation_type Add_Subtract
+SET_PARAMETER c_optimization Speed_Optimized
+SET_PARAMETER c_a_exponent_width 8
+SET_PARAMETER c_result_fraction_width 24
+SET_PARAMETER axi_optimize_goal Resources
+SET_PARAMETER has_b_tuser false
+SET_PARAMETER has_a_tuser false
+SET_ERROR_CODE 2
+SET_ERROR_MSG  CANCEL: Customization cancelled.
+SET_ERROR_TEXT Finished initializing IP model.	
