@@ -1,0 +1,19 @@
+﻿Build started 5/7/2014 11:23:10 AM.
+     1>Project "C:\Users\Bita\Desktop\SW_Example\eth_sirc_SW_Example.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\eth_sirc_lib_SW_Example.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\eigen\\" /I..\SWSrc /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt ..\SW_Example\eth_SW_Example.cpp /clr:nostdlib 
+         eth_SW_Example.cpp
+     1>..\SW_Example\eth_SW_Example.cpp(274): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\SW_Example\eth_SW_Example.cpp(405): warning C4244: 'initializing' : conversion from 'unsigned long' to 'float', possible loss of data
+     1>..\SW_Example\eth_SW_Example.cpp(406): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\SW_Example\eth_SW_Example.cpp(407): error C2015: too many characters in constant
+     1>..\SW_Example\eth_SW_Example.cpp(408): error C2015: too many characters in constant
+     1>Done Building Project "C:\Users\Bita\Desktop\SW_Example\eth_sirc_SW_Example.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.01
