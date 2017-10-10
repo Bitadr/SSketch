@@ -1,0 +1,38 @@
+﻿Build started 4/3/2014 1:51:30 PM.
+     1>Project "C:\Users\Bita\Desktop\SWSrc\Sirc_dll\Sirc_dll.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Debug\Sirc_dll.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "x64\Debug\Sirc_dll.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I..\Pico /Zi /nologo /W3 /WX- /Od /D "SIRC_DLL_LINKAGE=__declspec(dllexport)" /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SIRC_DLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt ..\dllmain.cpp ..\eth_SIRC.cpp ..\packet.cpp ..\pcie2_SIRC.cpp ..\pcie_SIRC.cpp ..\sirc.cpp ..\sirc_server.cpp ..\srv_SIRC.cpp
+         srv_SIRC.cpp
+         sirc_server.cpp
+         sirc.cpp
+         pcie_SIRC.cpp
+         pcie2_SIRC.cpp
+         packet.cpp
+         eth_SIRC.cpp
+         dllmain.cpp
+         Generating Code...
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Bita\Desktop\SWSrc\x64\Debug\Sirc_dll.dll" /INCREMENTAL:NO /NOLOGO Setupapi.lib powrprof.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\Sirc_dll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Bita\Desktop\SWSrc\x64\Debug\Sirc_dll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Bita\Desktop\SWSrc\x64\Debug\Sirc_dll.lib" /MACHINE:X64 /DLL x64\Debug\dllmain.obj
+         x64\Debug\eth_SIRC.obj
+         x64\Debug\packet.obj
+         x64\Debug\pcie2_SIRC.obj
+         x64\Debug\pcie_SIRC.obj
+         x64\Debug\sirc.obj
+         x64\Debug\sirc_server.obj
+         x64\Debug\srv_SIRC.obj
+            Creating library C:\Users\Bita\Desktop\SWSrc\x64\Debug\Sirc_dll.lib and object C:\Users\Bita\Desktop\SWSrc\x64\Debug\Sirc_dll.exp
+         Sirc_dll.vcxproj -> C:\Users\Bita\Desktop\SWSrc\x64\Debug\Sirc_dll.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Bita\Desktop\SWSrc\x64\Debug\Sirc_dll.dll;#2" /manifest x64\Debug\Sirc_dll.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\Sirc_dll.unsuccessfulbuild".
+         Touching "x64\Debug\Sirc_dll.lastbuildstate".
+     1>Done Building Project "C:\Users\Bita\Desktop\SWSrc\Sirc_dll\Sirc_dll.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.87
