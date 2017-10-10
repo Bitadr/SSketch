@@ -24,7 +24,7 @@ Open ISE project "HW_Example_13_2_ML605
 * **ethernetController.v:** Controller module for ethernet module
   * Edit Mac address for FPGA at line 24
   * Transmitting data in between the Host and FPGA
-  * written by Ken Eguro, adapted to fit our module
+  ** We leveraged the Ethernet module from Microsoft Reaserch written by Ken Eguro (we modified the code to fit our module descriptions).
 * **paralleldecomposition.v:** Controller module for SSketch
   * Instantiate multiple OMP module
   * Managing hand-shaking signals as well as distributing the underlying work in between different OMP kernels  
