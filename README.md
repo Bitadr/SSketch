@@ -30,3 +30,6 @@ Open ISE project "HW_Example_13_2_ML605
   * Managing hand-shaking signals as well as distributing the underlying work in between different OMP kernels  
 * **OMP_core.v:** OMP module
   * Orthogonal Matching Pursuit (OMP): Transforming data to the corresponding union of sub-spaces by forming the block-sparse matrix V
+  
+## Demo
+**Demo.wmv** is provided to show a test run of the API using chipsoc for visualization
