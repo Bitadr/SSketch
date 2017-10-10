@@ -32,4 +32,4 @@ Open ISE project "HW_Example_13_2_ML605
   * Orthogonal Matching Pursuit (OMP): Transforming data to the corresponding union of sub-spaces by forming the block-sparse matrix V
   
 ## Demo
-**Demo.wmv** is provided to show a test run of the API using chipsoc for visualization
+**Demo.wmv** is provided to show a test run of the API using chipscop for visualization
