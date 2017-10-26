@@ -1,3 +1,3 @@
-Verilog/*.html linguist-documentation=false
-Verilog/emac_single/doc/v6_emac_v1_5_vinfo.html linguist-documentation=false
+Verilog/*.html linguist-documentation=true
+Verilog/emac_single/doc/v6_emac_v1_5_vinfo.html linguist-documentation=true
 *.vhd linguist-language=Verilog
