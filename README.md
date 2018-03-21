@@ -33,3 +33,5 @@ Open ISE project "HW_Example_13_2_ML605
   
 ## Demo
 **Demo.wmv** is provided to show a test run of the API using chipscop for visualization
+
+**Note:** If you are having trouble using the codes provided, please email bita@ucsd.edu we are happy to provide assistance.
